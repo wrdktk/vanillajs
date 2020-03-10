@@ -1,0 +1,177 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 200;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.slider-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fb8085;
+  flex: 1;
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.slide:hover {
+  flex-grow: 2;
+  filter: grayscale(0%);
+  transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+}
+
+.slide .active {
+  flex-grow: 4;
+}
+
+.slide-info {
+  z-index: 999;
+  position: absolute;
+  bottom: 20px;
+  right: -40px;
+}
+
+.slide-info ul {
+  list-style: none;
+  transform: rotate(-90deg);
+}
+
+.slide-info ul li {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.slide-info ul li:first-child {
+  color: yellow;
+}
+
+.slide-num {
+  z-index: 998;
+  font-size: 50px;
+  color: #fff;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  filter: grayscale(0%);
+}
+
+.card-img {
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .card-content {
+  padding: 10% 5%;
+  box-sizing: border-box;
+  width: 70%;
+  background: rgba(180, 186, 187, 0.21);
+  left: 30%;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  /*   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11); */
+}
+
+.card-subheader {
+  font-weight: 900;
+  font-size: 1.7vmin;
+  text-transform: uppercase;
+  font-family: Poppins;
+  letter-spacing: 10px;
+  color: #ffffff;
+}
+
+.card-header {
+  font-weight: 700;
+  font-size: 54px;
+  text-transform: capitalize;
+  line-height: 1;
+  margin: 3vmin 0 3.5vmin;
+  color: #fff;
+  font-family: Poppins;
+}
+
+.card-para {
+  font-size: 1.6vmin;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 2.5vmin;
+  color: #fff;
+  font-family: Poppins;
+}
+
+/* 
+#panel1 {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4854597/galshir-umbrella.jpg");
+}
+#panel2 {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4776189/galshir-genesis.png");
+}
+#panel3 {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/5329211/galshir-walking.gif");
+}
+#panel4 {
+  background-image: url("https://cdn.dribbble.com/users/729829/screenshots/4611698/galshir-paper-boat.png");
+}
+ */
+
+#panel1 {
+  background-image: url("https://i.imgur.com/Od61xnV.jpg");
+}
+#panel2 {
+  background-image: url("https://i.imgur.com/VYHGnbX.jpg");
+}
+#panel4 {
+  background-image: url("https://i.imgur.com/Nx7BQ4z.jpg");
+}
+#panel3 {
+  background-image: url("https://i.imgur.com/vzKrqyD.jpg");
+}
